@@ -7,9 +7,9 @@ layout: default
 
 Hey! I am a masters student at the [National Institute of Science Education and Research, Bhubaneswar](https://www.niser.ac.in/). I am interested in theoretical evolution and animal behaviour, specifically in game theoretic modelling of animal behaviour. 
 
-# Academic
+# Academic+
 ## Portfolio
-* [CV](https://github.com/CaptChup/CaptChup.github.io/blob/main/academic/curriculum_vitae.pdf?)
+* [CV](academic/curriculum_vitae.pdf)
 
 ## Internships
 * [Internship Report (Summer 2023)](https://github.com/CaptChup/CaptChup.github.io/blob/main/academic/summer_internship_report.pdf?raw=true)
