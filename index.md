@@ -9,11 +9,11 @@ Hey! I am a masters student at the [National Institute of Science Education and 
 
 # Academic
 ## Portfolio
-* [CV](https://github.com/CaptChup/CaptChup.github.io/blob/main/academic/curriculum_vitae.pdf)
+* [CV](https://github.com/CaptChup/CaptChup.github.io/blob/main/academic/curriculum_vitae.pdf?raw=true)
 
 ## Internships
 * [Internship Report (Summer 2023)](https://github.com/CaptChup/CaptChup.github.io/blob/main/academic/summer_internship_report.pdf?raw=true)
-* [Internship Report (Summer 2024)](https://github.com/CaptChup/CaptChup.github.io/blob/main/academic/summer_internship_report_c_l_srinivas_2024_signed_with_ack.pdf)
+* [Internship Report (Summer 2024)](https://github.com/CaptChup/CaptChup.github.io/blob/main/academic/summer_internship_report_c_l_srinivas_2024_signed_with_ack.pdf?raw=true)
 
 # Art
 * Find my art [@art_srini](https://www.instagram.com/art_srini/)
