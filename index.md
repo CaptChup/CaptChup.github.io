@@ -2,7 +2,6 @@
 layout: default
 ---
 
-# 
 # Bio
 <img src="https://github.com/CaptChup/CaptChup.github.io/blob/main/media/img_3106_cropped.JPG?raw=true"  width="30%" height="15%">
 
