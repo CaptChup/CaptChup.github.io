@@ -2,7 +2,7 @@
 <!--layout: default-->
 ---
 
-# Bio (logist?)
+# Cayman
 <img src="https://github.com/CaptChup/CaptChup.github.io/blob/main/media/img_3106_cropped.JPG?raw=true"  width="30%" height="15%">
 
 Hey! I am a masters student at the [National Institute of Science Education and Research, Bhubaneswar](https://www.niser.ac.in/). I am interested in theoretical evolution and animal behaviour, specifically in game theoretic modelling of animal behaviour. 
