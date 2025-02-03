@@ -2,9 +2,9 @@
 layout: default
 ---
 
-# Bio
 ![me](https://github.com/CaptChup/CaptChup.github.io/blob/main/assests/img/website.png?raw=true)
 
+# Bio
 Hey! I am a masters student at the [National Institute of Science Education and Research, Bhubaneswar](https://www.niser.ac.in/). I am interested in theoretical evolution and animal behaviour, specifically in game theoretic modelling of animal behaviour. 
 
 # Academic
