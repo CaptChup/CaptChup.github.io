@@ -1,5 +1,6 @@
 ---
 layout: default
+<link rel="shortcut icon" type="image/x-icon" href="assests/img/favicons/favicon.ico">
 ---
 
 <img src="https://github.com/CaptChup/CaptChup.github.io/blob/main/media/img_3106_cropped.JPG?raw=true"  width="30%" height="15%">
