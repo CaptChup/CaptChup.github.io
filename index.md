@@ -3,7 +3,7 @@ layout: default
 ---
 <link rel="shortcut icon" type="image/x-icon" href="assests/img/favicons/favicon.ico">
 <img align="center" width="150" height="150" src="https://github.com/CaptChup/CaptChup.github.io/blob/main/assests/img/img_3106_cropped_compressed.JPG?raw=true">
-<p style="text-align: center" width="150" height="150"><img src="https://github.com/CaptChup/CaptChup.github.io/blob/main/assests/img/img_3106_cropped_compressed.JPG?raw=true"></p>
+<p style="text-align: center" width="100" height="100"><img src="https://github.com/CaptChup/CaptChup.github.io/blob/main/assests/img/img_3106_cropped_compressed.JPG?raw=true"></p>
 
 
 # Bio (logist?)
