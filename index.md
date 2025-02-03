@@ -2,7 +2,7 @@
 layout: default
 ---
 <link rel="shortcut icon" type="image/x-icon" href="assests/img/favicons/favicon.ico">
-<img align="left" width="150" height="150" src="https://github.com/CaptChup/CaptChup.github.io/blob/main/assests/img/img_3106_cropped_compressed.JPG?raw=true">
+<img align="left" width="200" height="200" src="https://github.com/CaptChup/CaptChup.github.io/blob/main/assests/img/img_3106_cropped_compressed.JPG?raw=true">
 <!--<p style="text-align: center" width="10" height="10"><img src="https://github.com/CaptChup/CaptChup.github.io/blob/main/assests/img/img_3106_cropped_compressed.JPG?raw=true"></p> -->
 
 <p align="right">
