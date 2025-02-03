@@ -9,7 +9,7 @@ Hey! I am a masters student at the [National Institute of Science Education and 
 
 # Academic
 ## Portfolio
-* [CV](academic/curriculum_vitae.pdf)
+* [CV](academic/curriculum_vitae_compressed.pdf)
 
 ## Internships
 * [Internship Report (Summer 2023)](academic/summer_internship_report.pdf)
