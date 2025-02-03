@@ -2,7 +2,7 @@
 layout: default
 ---
 <link rel="shortcut icon" type="image/x-icon" href="assests/img/favicons/favicon.ico">
-![my photo](assests/img/img_3106_cropped_compressed.JPG)
+<img align="right" width="100" height="100" src="https://github.com/CaptChup/CaptChup.github.io/assests/img/img_3106_cropped_compressed.JPG">
 
 # Bio (logist?)
 Hey! I am a masters student at the [National Institute of Science Education and Research, Bhubaneswar](https://www.niser.ac.in/). I am interested in theoretical evolution and animal behaviour, specifically in game theoretic modelling of animal behaviour. 
