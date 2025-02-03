@@ -2,7 +2,7 @@
 layout: default
 ---
 <link rel="shortcut icon" type="image/x-icon" href="assests/img/favicons/favicon.ico">
-<img align="right" width="150" height="150" src="https://github.com/CaptChup/CaptChup.github.io/blob/main/assests/img/img_3106_cropped_compressed.JPG?raw=true">
+<img align="centre" width="150" height="150" src="https://github.com/CaptChup/CaptChup.github.io/blob/main/assests/img/img_3106_cropped_compressed.JPG?raw=true">
 
 <p>&nbsp;</p>
 
