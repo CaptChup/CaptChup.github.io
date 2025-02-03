@@ -1,7 +1,3 @@
----
-layout: default
----
-
 <link rel="shortcut icon" type="image/x-icon" href="assests/img/favicons/favicon.ico">
 
 ![me](https://github.com/CaptChup/CaptChup.github.io/blob/main/assests/img/website.png?raw=true)
