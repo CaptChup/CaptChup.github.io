@@ -1,6 +1,6 @@
 ---
 layout: default
-title: homepage
+title: C L Srinivas's Homepage
 ---
 
 <link rel="shortcut icon" type="image/x-icon" href="assests/img/favicons/favicon.ico">
