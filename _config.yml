@@ -242,10 +242,11 @@ yat:
 markdown: kramdown
 kramdown:
   input: GFM
-
-theme: jekyll-theme-yat
+  
+remote_theme: "jeffreytse/jekyll-theme-yat"
 
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
