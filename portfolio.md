@@ -6,7 +6,7 @@ permalink: /portfolio/
 
 # Welcome to my portfolio
 
-## [CV](CaptChup.github.io/assets/academic/curriculum_vitae.pdf)
+## [CV](/CaptChup.github.io/assets/academic/curriculum_vitae.pdf)
 
 ## Current Projects
 * My MSc thesis (will be updated soon!)
