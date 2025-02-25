@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Gallery
-permalink: /x/
+permalink: /gallery/
 ---
 
 # Welcome to my gallery
