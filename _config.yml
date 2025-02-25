@@ -153,10 +153,10 @@ brand_color: sriniblue
 # this and add the path to the pages in order as they should show up
 header_pages:
   - index.html
-  - portfolio.md
-  - gallery.md
-  - tags.html
   - about.html
+  - gallery.md
+  - portfolio.md
+  - tags.html
 
 # Page default value
 defaults:
