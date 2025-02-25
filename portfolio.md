@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Portfolio
-permalink: /x/
+permalink: /portfolio/
 ---
 
 # Welcome to my portfolio
