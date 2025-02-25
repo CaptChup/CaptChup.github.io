@@ -156,7 +156,7 @@ header_pages:
   - portfolio.md
   - gallery.md
   - tags.html
-  - about.md
+  - about.html
 
 # Page default value
 defaults:
