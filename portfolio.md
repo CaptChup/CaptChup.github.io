@@ -6,7 +6,7 @@ permalink: /portfolio/
 
 # Welcome to my portfolio
 
-* [CV](/assets/academic/curriculum_vitae.pdf)
+## [CV](/assets/academic/curriculum_vitae_compressed.pdf)
 
 ## Current Projects
 * My MSc thesis (will be updated soon!)
