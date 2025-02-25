@@ -4,6 +4,6 @@ title: Portfolio
 permalink: /x/
 ---
 
-# Welcome to my portfolio
+# Welcome to my gallery
 
-This is a sample page for my portfolio.
+This is a sample page for my gallery.
