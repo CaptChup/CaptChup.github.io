@@ -1,17 +1,58 @@
 ---
 layout: about
-title: About
+title: About Me
 ---
 
-<h2>About</h2>
+<div class="about-container">
+  <div class="about-text">
+    <h2>About Me</h2>
+    <p>
+      Hi! I'm <strong>C L Srinivas</strong>, a master's student deeply interested in collective behavior, 
+      animal aggregation, and game theory. My research focuses on understanding how simple rules at the 
+      individual level give rise to complex group dynamics.
+    </p>
+    <p>
+      Currently, I'm working on my MSc thesis and exploring mathematical models to explain biological phenomena. 
+      When I'm not diving into research, I enjoy writing about science and building elegant digital spaces — like this one!
+    </p>
+    <h3>Connect with me</h3>
+    <ul>
+      <li>Email: <a href="mailto:chelakkarasrinivas@gmail.com">chelakkarasrinivas@gmail.com</a></li>
+      <li>GitHub: <a href="https://github.com/CaptChup" target="_blank">CaptChup</a></li>
+    </ul>
+  </div>
+  
+  <div class="about-photo">
+    <img src="/assets/images/me.png" alt="C L Srinivas" class="profile-photo">
+  </div>
+</div>
 
-<p>
-:art:&nbsp;Yet another theme for elegant writers with modern flat style
-and beautiful night mode.
-</p>
+<style>
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
 
-<p>
-Hey, nice to meet you, you found this Jekyll theme. Here the yet another
-theme is a modern theme, and it's quite clear, clean and neat for writers
-and posts.
-</p>
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-photo {
+  flex: 1;
+  text-align: center;
+}
+
+.about-photo img {
+  max-width: 100%;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+</style>
