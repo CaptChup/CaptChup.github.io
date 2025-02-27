@@ -4,13 +4,11 @@ title: Gallery
 permalink: /gallery/
 ---
 
-# 🎨 Welcome to My Gallery
+# Welcome to My Gallery
+I have curated some of my favorite artworks and photographs, enjoy! Find more artwork [here](https://www.instagram.com/art_srini/) and more photographs [here](https://www.instagram.com/photo_srini/)!
 
-Explore my collection of artworks and photographs. Click on the links below to view dedicated pages for my art and photography!
 
----
-
-## 🖌️ Artworks
+## Art
 <div class="gallery-item">
   <a href="/gallery/art">
     <img src="/assets/images/artwork_1.jpg" alt="Art">
@@ -18,9 +16,8 @@ Explore my collection of artworks and photographs. Click on the links below to v
   </a>
 </div>
 
----
 
-## 📸 Photography
+## Photography
 <div class="gallery-item">
   <a href="/gallery/photography">
     <img src="/assets/images/photograph_1.jpg" alt="Photography">
