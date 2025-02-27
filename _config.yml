@@ -157,6 +157,7 @@ header_pages:
   - gallery.md
   - portfolio.md
   - tags.html
+  - contact.md
 
 # Page default value
 defaults:
