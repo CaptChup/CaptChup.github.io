@@ -6,58 +6,62 @@ permalink: /gallery/photography/
 
 # Featured Clicks
 
-<div class="photo-gallery">
-  <div class="photo-item">
+<div class="art-gallery">
+  <div class="art-item" onclick="openLightbox('/assets/images/gallery/photography/asian_openbill.JPG', 'Asian Openbill')">
     <img src="/assets/images/gallery/photography/asian_openbill.JPG" alt="Asian Openbill">
-    <p class="photo-caption">Asian Openbill<br>A serene moment by the waterside.</p>
   </div>
-  <div class="photo-item">
+  <div class="art-item" onclick="openLightbox('/assets/images/gallery/photography/brahminy_shellduck.jpg', 'Brahminy Shellduck')">
     <img src="/assets/images/gallery/photography/brahminy_shellduck.jpg" alt="Brahminy Shellduck">
-    <p class="photo-caption">Brahminy Shellduck<br>A striking bird against the golden light.</p>
   </div>
-  <div class="photo-item">
+  <div class="art-item" onclick="openLightbox('/assets/images/gallery/photography/buffalo.JPG', 'Buffalo')">
     <img src="/assets/images/gallery/photography/buffalo.JPG" alt="Buffalo">
-    <p class="photo-caption">Buffalo<br>A quiet giant grazing at dusk.</p>
   </div>
-  <div class="photo-item">
+  <div class="art-item" onclick="openLightbox('/assets/images/gallery/photography/cover.JPG', 'Cover')">
+    <img src="/assets/images/gallery/photography/cover.JPG" alt="Cover">
+  </div>
+  <div class="art-item" onclick="openLightbox('/assets/images/gallery/photography/elephant.JPG', 'Elephant')">
     <img src="/assets/images/gallery/photography/elephant.JPG" alt="Elephant">
-    <p class="photo-caption">Elephant<br>The majestic guardian of the wild.</p>
   </div>
-  <div class="photo-item">
+  <div class="art-item" onclick="openLightbox('/assets/images/gallery/photography/great_egret.jpeg', 'Great Egret')">
     <img src="/assets/images/gallery/photography/great_egret.jpeg" alt="Great Egret">
-    <p class="photo-caption">Great Egret<br>Graceful and elegant in flight.</p>
   </div>
-  <div class="photo-item">
+  <div class="art-item" onclick="openLightbox('/assets/images/gallery/photography/oriental_honey_buzzard.JPG', 'Oriental Honey Buzzard')">
     <img src="/assets/images/gallery/photography/oriental_honey_buzzard.JPG" alt="Oriental Honey Buzzard">
-    <p class="photo-caption">Oriental Honey Buzzard<br>A predator's sharp gaze.</p>
   </div>
-  <div class="photo-item">
+  <div class="art-item" onclick="openLightbox('/assets/images/gallery/photography/purple_heron.jpg', 'Purple Heron')">
     <img src="/assets/images/gallery/photography/purple_heron.jpg" alt="Purple Heron">
-    <p class="photo-caption">Purple Heron<br>A splash of color in the wetlands.</p>
   </div>
-  <div class="photo-item">
-    <img src="/assets/images/gallery/photography/white_rumped_munia.jpg" alt="White-rumped Munia">
-    <p class="photo-caption">White-rumped Munia<br>A tiny bird with a bold spirit.</p>
+  <div class="art-item" onclick="openLightbox('/assets/images/gallery/photography/white_rumped_munia.jpg', 'White Rumped Munia')">
+    <img src="/assets/images/gallery/photography/white_rumped_munia.jpg" alt="White Rumped Munia">
   </div>
-  <div class="photo-item">
-    <img src="/assets/images/gallery/photography/white_throated_kingfisher.jpg" alt="White-throated Kingfisher">
-    <p class="photo-caption">White-throated Kingfisher<br>Vibrant hues and a sharp beak.</p>
+  <div class="art-item" onclick="openLightbox('/assets/images/gallery/photography/white_throated_kingfisher.jpg', 'White Throated Kingfisher')">
+    <img src="/assets/images/gallery/photography/white_throated_kingfisher.jpg" alt="White Throated Kingfisher">
   </div>
 </div>
 
+<!-- Lightbox container -->
+<div id="lightbox" class="lightbox">
+  <span class="close" onclick="closeLightbox()">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
+  <p class="lightbox-caption" id="lightbox-caption"></p>
+  <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+  <button class="next" onclick="changeImage(1)">&#10095;</button>
+</div>
+
 <style>
-.photo-gallery {
+.art-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   padding: 2rem 0;
 }
 
-.photo-item {
+.art-item {
   text-align: center;
+  cursor: pointer;
 }
 
-.photo-item img {
+.art-item img {
   width: 100%;
   height: auto;
   border-radius: 10px;
@@ -65,13 +69,87 @@ permalink: /gallery/photography/
   transition: transform 0.3s ease-in-out;
 }
 
-.photo-item img:hover {
+.art-item img:hover {
   transform: scale(1.05);
 }
 
-.photo-caption {
-  font-size: 1rem;
-  color: #555;
-  margin-top: 0.5rem;
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  flex-direction: column;
 }
+
+.lightbox-content {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+.lightbox-caption {
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.prev { left: 10%; }
+.next { right: 10%; }
 </style>
+
+<script>
+let currentImageIndex = 0;
+let images = [];
+let captions = [];
+
+document.addEventListener('DOMContentLoaded', () => {
+  images = Array.from(document.querySelectorAll('.art-item img')).map(img => img.src);
+  captions = Array.from(document.querySelectorAll('.art-item img')).map(img => img.alt);
+});
+
+function openLightbox(imgSrc, caption) {
+  currentImageIndex = images.indexOf(imgSrc);
+  document.getElementById('lightbox-img').src = imgSrc;
+  document.getElementById('lightbox-caption').textContent = caption;
+  document.getElementById('lightbox').style.display = 'flex';
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+}
+
+function changeImage(direction) {
+  currentImageIndex += direction;
+  if (currentImageIndex < 0) currentImageIndex = images.length - 1;
+  if (currentImageIndex >= images.length) currentImageIndex = 0;
+  document.getElementById('lightbox-img').src = images[currentImageIndex];
+  document.getElementById('lightbox-caption').textContent = captions[currentImageIndex];
+}
+</script>
