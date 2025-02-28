@@ -4,27 +4,27 @@ title: Art
 permalink: /gallery/art/
 images:
   - path: /assets/images/gallery/art/a_knight_of_seven_kingdoms.jpg
-    caption: A Knight of Seven Kingdoms
+    caption: Ser Duncan The Tall
   - path: /assets/images/gallery/art/a_knight_of_seven_kingdoms_2.jpg
-    caption: A Knight of Seven Kingdoms (Alternate)
+    caption: A Knight of Seven Kingdoms
   - path: /assets/images/gallery/art/bruce_lee.jpg
-    caption: Bruce Lee
+    caption: *“Like everyone else, you want to learn the way to win, but never to accept the way to lose. To accept defeat, to learn to die, is to be liberated from it. So when tomorrow comes, you must free your ambitious mind and learn the art of dying.”*
   - path: /assets/images/gallery/art/clouds.jpg
-    caption: Clouds
+    caption: Morning blush
   - path: /assets/images/gallery/art/cover.jpg
-    caption: Cover Art
+    caption: *I was poor, because we had nothing. But I was rich, because I had a dream. A dream of becoming the greatest bodybuilder in the world.*
   - path: /assets/images/gallery/art/froggy.jpg
-    caption: Froggy
+    caption: *Inner peace*
   - path: /assets/images/gallery/art/ronaldo.jpg
     caption: Cristiano Ronaldo
   - path: /assets/images/gallery/art/shifu.jpg
-    caption: Master Shifu
+    caption: *If you only do what you can do, you will never be more than who you are.*
   - path: /assets/images/gallery/art/skull.jpg
-    caption: Skull
+    caption: *Dead men tell no tales*
   - path: /assets/images/gallery/art/st_gerome.jpg
-    caption: St. Gerome
+    caption: Plaster cast of St. Jerome
   - path: /assets/images/gallery/art/tessa.jpeg
-    caption: Tessa
+    caption: Young Tessa
   - path: /assets/images/gallery/art/tiger.jpg
     caption: Tiger
 ---
