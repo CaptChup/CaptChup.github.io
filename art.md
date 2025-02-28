@@ -12,15 +12,15 @@ images:
   - path: /assets/images/gallery/art/clouds.jpg
     caption: Morning blush
   - path: /assets/images/gallery/art/cover.jpg
-    caption: *I was poor, because we had nothing. But I was rich, because I had a dream. A dream of becoming the greatest bodybuilder in the world.*
+    caption: _I was poor, because we had nothing. But I was rich, because I had a dream. A dream of becoming the greatest bodybuilder in the world._
   - path: /assets/images/gallery/art/froggy.jpg
-    caption: *Inner peace*
+    caption: _Inner peace_
   - path: /assets/images/gallery/art/ronaldo.jpg
     caption: Cristiano Ronaldo
   - path: /assets/images/gallery/art/shifu.jpg
-    caption: *If you only do what you can do, you will never be more than who you are.*
+    caption: _If you only do what you can do, you will never be more than who you are._
   - path: /assets/images/gallery/art/skull.jpg
-    caption: *Dead men tell no tales*
+    caption: _Dead men tell no tales_
   - path: /assets/images/gallery/art/st_gerome.jpg
     caption: Plaster cast of St. Jerome
   - path: /assets/images/gallery/art/tessa.jpeg
