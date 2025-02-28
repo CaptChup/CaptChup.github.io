@@ -8,7 +8,7 @@ images:
   - path: /assets/images/gallery/art/a_knight_of_seven_kingdoms_2.jpg
     caption: A Knight of Seven Kingdoms
   - path: /assets/images/gallery/art/bruce_lee.jpg
-    caption: *“Like everyone else, you want to learn the way to win, but never to accept the way to lose. To accept defeat, to learn to die, is to be liberated from it. So when tomorrow comes, you must free your ambitious mind and learn the art of dying.”*
+    caption: _“Like everyone else, you want to learn the way to win, but never to accept the way to lose. To accept defeat, to learn to die, is to be liberated from it. So when tomorrow comes, you must free your ambitious mind and learn the art of dying.”_
   - path: /assets/images/gallery/art/clouds.jpg
     caption: Morning blush
   - path: /assets/images/gallery/art/cover.jpg
