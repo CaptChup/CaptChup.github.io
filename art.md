@@ -48,6 +48,82 @@ images:
   <button class="next" onclick="changeImage(1)">&#10095;</button>
 </div>
 
+<style>
+.art-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.art-item {
+  text-align: center;
+  cursor: pointer;
+}
+
+.art-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.art-item img:hover {
+  transform: scale(1.05);
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  flex-direction: column;
+}
+
+.lightbox-content {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+.lightbox-caption {
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.prev { left: 10%; }
+.next { right: 10%; }
+</style>
+
 <script>
 let currentImageIndex = 0;
 let images = [];
