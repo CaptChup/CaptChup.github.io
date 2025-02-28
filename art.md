@@ -9,7 +9,7 @@ permalink: /gallery/art/
 <div class="art-gallery">
   {% for image in site.static_files %}
     {% if image.path contains 'assets/images/gallery/art/' %}
-      <div class="art-item" onclick="openLightbox('{{ image.path }}', '{{ image.name | replace: '_', ' ' | remove: '.jpg' | remove: '.jpeg' | remove: '.png' }}')">
+      <div class="art-item" onclick="openLightbox('{{ image.path }}', '{{ image.name | replace: '_' , ' ' | remove: '.jpg' | remove: '.jpeg' | remove: '.png' }}')">
         <img src="{{ image.path }}" alt="{{ image.name }}">
       </div>
     {% endif %}
@@ -40,7 +40,7 @@ permalink: /gallery/art/
 
 .art-item img {
   width: 100%;
-  height: 100%;
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
@@ -108,7 +108,7 @@ let captions = [];
 
 document.addEventListener('DOMContentLoaded', () => {
   images = Array.from(document.querySelectorAll('.art-item img')).map(img => img.src);
-  captions = Array.from(document.querySelectorAll('.art-item')).map(item => item.querySelector('img').alt.replace(/_/g, ' ').replace(/\.jpg|\.jpeg|\.png/, ''));
+  captions = Array.from(document.querySelectorAll('.art-item img')).map(img => img.alt.replace(/_/g, ' ').replace(/\.(jpg|jpeg|png)$/, ''));
 });
 
 function openLightbox(imgSrc, caption) {
