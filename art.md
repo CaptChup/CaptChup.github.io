@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Art
+permalink: /gallery/art/
 ---
 
 # Featured Artworks
