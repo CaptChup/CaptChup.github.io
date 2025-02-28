@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Photography
+permalink: /gallery/photography/
 ---
 
 # Featured Clicks
