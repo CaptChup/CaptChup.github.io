@@ -11,7 +11,7 @@ I have curated some of my favorite artworks and photographs, enjoy! Find more ar
 ## Art
 <div class="gallery-item">
   <a href="/gallery/art">
-    <img src="/assets/images/artwork_1.jpg" alt="Art">
+    <img src="/assets/images/gallery/art/cover.jpg" alt="Art">
     <p class="caption">Art</p>
   </a>
 </div>
@@ -20,7 +20,7 @@ I have curated some of my favorite artworks and photographs, enjoy! Find more ar
 ## Photography
 <div class="gallery-item">
   <a href="/gallery/photography">
-    <img src="/assets/images/photograph_1.jpg" alt="Photography">
+    <img src="/assets/images/gallery/photography/cover.JPG" alt="Photography">
     <p class="caption">Photography</p>
   </a>
 </div>
