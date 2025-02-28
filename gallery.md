@@ -9,14 +9,14 @@ I have curated some of my favorite artworks and photographs, enjoy! Find more ar
 
 <div class="gallery-container">
   <div class="gallery-item">
-    <a href="/art.md">
+    <a href="/gallery/art/">
       <img src="/assets/images/gallery/art/cover.jpg" alt="Art">
       <p class="caption">Art</p>
     </a>
   </div>
 
   <div class="gallery-item">
-    <a href="/photography.md">
+    <a href="/gallery/photography/">
       <img src="/assets/images/gallery/photography/cover.JPG" alt="Photography">
       <p class="caption">Photography</p>
     </a>
