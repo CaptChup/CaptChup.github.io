@@ -9,9 +9,8 @@ permalink: /gallery/art/
 <div class="art-gallery">
   {% for image in site.static_files %}
     {% if image.path contains 'assets/images/gallery/art/' %}
-      <div class="art-item" onclick="openLightbox('{{ image.path }}')">
+      <div class="art-item" onclick="openLightbox('{{ image.path }}', '{{ image.name | replace: '_', ' ' | remove: '.jpg' | remove: '.jpeg' | remove: '.png' }}')">
         <img src="{{ image.path }}" alt="{{ image.name }}">
-        <p class="art-caption">{{ image.name | replace: '_', ' ' | remove: '.jpg' | remove: '.jpeg' | remove: '.png' }}</p>
       </div>
     {% endif %}
   {% endfor %}
@@ -21,6 +20,7 @@ permalink: /gallery/art/
 <div id="lightbox" class="lightbox">
   <span class="close" onclick="closeLightbox()">&times;</span>
   <img class="lightbox-content" id="lightbox-img">
+  <p class="lightbox-caption" id="lightbox-caption"></p>
   <button class="prev" onclick="changeImage(-1)">&#10094;</button>
   <button class="next" onclick="changeImage(1)">&#10095;</button>
 </div>
@@ -50,12 +50,6 @@ permalink: /gallery/art/
   transform: scale(1.05);
 }
 
-.art-caption {
-  font-size: 1rem;
-  color: #555;
-  margin-top: 0.5rem;
-}
-
 .lightbox {
   display: none;
   position: fixed;
@@ -67,12 +61,20 @@ permalink: /gallery/art/
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  flex-direction: column;
 }
 
 .lightbox-content {
   max-width: 90%;
   max-height: 90%;
   border-radius: 10px;
+}
+
+.lightbox-caption {
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-align: center;
 }
 
 .close {
@@ -102,14 +104,17 @@ permalink: /gallery/art/
 <script>
 let currentImageIndex = 0;
 let images = [];
+let captions = [];
 
 document.addEventListener('DOMContentLoaded', () => {
   images = Array.from(document.querySelectorAll('.art-item img')).map(img => img.src);
+  captions = Array.from(document.querySelectorAll('.art-item')).map(item => item.querySelector('img').alt.replace(/_/g, ' ').replace(/\.jpg|\.jpeg|\.png/, ''));
 });
 
-function openLightbox(imgSrc) {
+function openLightbox(imgSrc, caption) {
   currentImageIndex = images.indexOf(imgSrc);
   document.getElementById('lightbox-img').src = imgSrc;
+  document.getElementById('lightbox-caption').textContent = caption;
   document.getElementById('lightbox').style.display = 'flex';
 }
 
@@ -122,7 +127,6 @@ function changeImage(direction) {
   if (currentImageIndex < 0) currentImageIndex = images.length - 1;
   if (currentImageIndex >= images.length) currentImageIndex = 0;
   document.getElementById('lightbox-img').src = images[currentImageIndex];
+  document.getElementById('lightbox-caption').textContent = captions[currentImageIndex];
 }
 </script>
-
-
