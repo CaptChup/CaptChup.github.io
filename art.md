@@ -8,19 +8,19 @@ images:
   - path: /assets/images/gallery/art/a_knight_of_seven_kingdoms_2.jpg
     caption: A Knight of Seven Kingdoms
   - path: /assets/images/gallery/art/bruce_lee.jpg
-    caption: _“Like everyone else, you want to learn the way to win, but never to accept the way to lose. To accept defeat, to learn to die, is to be liberated from it. So when tomorrow comes, you must free your ambitious mind and learn the art of dying.”_
+    caption: “Like everyone else, you want to learn the way to win, but never to accept the way to lose. To accept defeat, to learn to die, is to be liberated from it. So when tomorrow comes, you must free your ambitious mind and learn the art of dying.”
   - path: /assets/images/gallery/art/clouds.jpg
     caption: Morning blush
   - path: /assets/images/gallery/art/cover.jpg
-    caption: _I was poor, because we had nothing. But I was rich, because I had a dream. A dream of becoming the greatest bodybuilder in the world._
+    caption: "I was poor, because we had nothing. But I was rich, because I had a dream. A dream of becoming the greatest bodybuilder in the world."
   - path: /assets/images/gallery/art/froggy.jpg
-    caption: _Inner peace_
+    caption: Inner peace
   - path: /assets/images/gallery/art/ronaldo.jpg
-    caption: Cristiano Ronaldo
+    caption: Suuuuuuiiii!
   - path: /assets/images/gallery/art/shifu.jpg
-    caption: _If you only do what you can do, you will never be more than who you are._
+    caption: "If you only do what you can do, you will never be more than who you are."
   - path: /assets/images/gallery/art/skull.jpg
-    caption: _Dead men tell no tales_
+    caption: Dead men tell no tales
   - path: /assets/images/gallery/art/st_gerome.jpg
     caption: Plaster cast of St. Jerome
   - path: /assets/images/gallery/art/tessa.jpeg
