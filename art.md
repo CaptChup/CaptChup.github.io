@@ -12,13 +12,13 @@ images:
   - path: /assets/images/gallery/art/clouds.jpg
     caption: Morning blush
   - path: /assets/images/gallery/art/cover.jpg
-    caption: "I was poor, because we had nothing. But I was rich, because I had a dream. A dream of becoming the greatest bodybuilder in the world."
+    caption: “I was poor, because we had nothing. But I was rich, because I had a dream. A dream of becoming the greatest bodybuilder in the world.”
   - path: /assets/images/gallery/art/froggy.jpg
     caption: Inner peace
   - path: /assets/images/gallery/art/ronaldo.jpg
     caption: Suuuuuuiiii!
   - path: /assets/images/gallery/art/shifu.jpg
-    caption: "If you only do what you can do, you will never be more than who you are."
+    caption: “If you only do what you can do, you will never be more than who you are.”
   - path: /assets/images/gallery/art/skull.jpg
     caption: Dead men tell no tales
   - path: /assets/images/gallery/art/st_gerome.jpg
