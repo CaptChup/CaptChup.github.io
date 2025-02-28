@@ -2,41 +2,37 @@
 layout: default
 title: Photography
 permalink: /gallery/photography/
+images:
+  - path: /assets/images/gallery/photography/asian_openbill.JPG
+    caption: Asian Openbill soaring high, Palakkad, Kerala.
+  - path: /assets/images/gallery/photography/brahminy_shellduck.jpg
+    caption: A nesting pair of Brahminy Shellducks, Mangalajodi, Odisha.
+  - path: /assets/images/gallery/photography/buffalo.JPG
+    caption: Buffalos returning after a long day, Mangalajodi, Odisha.
+  - path: /assets/images/gallery/photography/cover.JPG
+    caption: A canine friend, Palakkad, Kerala.
+  - path: /assets/images/gallery/photography/elephant.JPG
+    caption: The gentle giant, Parambikulam Tiger Reserve, Kerala.
+  - path: /assets/images/gallery/photography/great_egret.jpeg
+    caption: The Great Egret, Mangalajodi, Odisha.
+  - path: /assets/images/gallery/photography/oriental_honey_buzzard.JPG
+    caption: Oriental Honey Buzzard surveying the landscape, Palakkad, Kerala.
+  - path: /assets/images/gallery/photography/purple_heron.jpg
+    caption: A beautiful Purple Heron, Mangalajodi, Odisha.
+  - path: /assets/images/gallery/photography/white_rumped_munia.jpg
+    caption: White Rumped Munia, Palakkad, Kerala.
+  - path: /assets/images/gallery/photography/white_throated_kingfisher.jpg
+    caption: White Throated Kingfisher, Palakkad, Kerala.
 ---
 
 # Featured Clicks
 
 <div class="art-gallery">
-  <div class="art-item" onclick="openLightbox('/assets/images/gallery/photography/asian_openbill.JPG', 'Asian Openbill')">
-    <img src="/assets/images/gallery/photography/asian_openbill.JPG" alt="Asian Openbill">
-  </div>
-  <div class="art-item" onclick="openLightbox('/assets/images/gallery/photography/brahminy_shellduck.jpg', 'Brahminy Shellduck')">
-    <img src="/assets/images/gallery/photography/brahminy_shellduck.jpg" alt="Brahminy Shellduck">
-  </div>
-  <div class="art-item" onclick="openLightbox('/assets/images/gallery/photography/buffalo.JPG', 'Buffalo')">
-    <img src="/assets/images/gallery/photography/buffalo.JPG" alt="Buffalo">
-  </div>
-  <div class="art-item" onclick="openLightbox('/assets/images/gallery/photography/cover.JPG', 'Cover')">
-    <img src="/assets/images/gallery/photography/cover.JPG" alt="Cover">
-  </div>
-  <div class="art-item" onclick="openLightbox('/assets/images/gallery/photography/elephant.JPG', 'Elephant')">
-    <img src="/assets/images/gallery/photography/elephant.JPG" alt="Elephant">
-  </div>
-  <div class="art-item" onclick="openLightbox('/assets/images/gallery/photography/great_egret.jpeg', 'Great Egret')">
-    <img src="/assets/images/gallery/photography/great_egret.jpeg" alt="Great Egret">
-  </div>
-  <div class="art-item" onclick="openLightbox('/assets/images/gallery/photography/oriental_honey_buzzard.JPG', 'Oriental Honey Buzzard')">
-    <img src="/assets/images/gallery/photography/oriental_honey_buzzard.JPG" alt="Oriental Honey Buzzard">
-  </div>
-  <div class="art-item" onclick="openLightbox('/assets/images/gallery/photography/purple_heron.jpg', 'Purple Heron')">
-    <img src="/assets/images/gallery/photography/purple_heron.jpg" alt="Purple Heron">
-  </div>
-  <div class="art-item" onclick="openLightbox('/assets/images/gallery/photography/white_rumped_munia.jpg', 'White Rumped Munia')">
-    <img src="/assets/images/gallery/photography/white_rumped_munia.jpg" alt="White Rumped Munia">
-  </div>
-  <div class="art-item" onclick="openLightbox('/assets/images/gallery/photography/white_throated_kingfisher.jpg', 'White Throated Kingfisher')">
-    <img src="/assets/images/gallery/photography/white_throated_kingfisher.jpg" alt="White Throated Kingfisher">
-  </div>
+  {% for image in page.images %}
+    <div class="art-item" onclick="openLightbox('{{ image.path }}', '{{ image.caption }}')">
+      <img src="{{ image.path }}" alt="{{ image.caption }}">
+    </div>
+  {% endfor %}
 </div>
 
 <!-- Lightbox container -->
@@ -130,8 +126,8 @@ let images = [];
 let captions = [];
 
 document.addEventListener('DOMContentLoaded', () => {
-  images = Array.from(document.querySelectorAll('.art-item img')).map(img => img.src);
-  captions = Array.from(document.querySelectorAll('.art-item img')).map(img => img.alt);
+  images = {{ page.images | map: 'path' | jsonify }};
+  captions = {{ page.images | map: 'caption' | jsonify }};
 });
 
 function openLightbox(imgSrc, caption) {
