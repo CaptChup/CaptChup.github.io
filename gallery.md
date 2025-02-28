@@ -7,28 +7,26 @@ permalink: /gallery/
 # Welcome to My Gallery
 I have curated some of my favorite artworks and photographs, enjoy! Find more artwork [here](https://www.instagram.com/art_srini/) and more photographs [here](https://www.instagram.com/photo_srini/)!
 
+<div class="gallery-container">
+  <div class="gallery-item">
+    <a href="/gallery/art">
+      <img src="/assets/images/gallery/art/cover.jpg" alt="Art">
+      <p class="caption">Art</p>
+    </a>
+  </div>
 
-## Art
-<div class="gallery-item">
-  <a href="/gallery/art">
-    <img src="/assets/images/gallery/art/cover.jpg" alt="Art">
-    <p class="caption">Art</p>
-  </a>
-</div>
-
-
-## Photography
-<div class="gallery-item">
-  <a href="/gallery/photography">
-    <img src="/assets/images/gallery/photography/cover.JPG" alt="Photography">
-    <p class="caption">Photography</p>
-  </a>
+  <div class="gallery-item">
+    <a href="/gallery/photography">
+      <img src="/assets/images/gallery/photography/cover.JPG" alt="Photography">
+      <p class="caption">Photography</p>
+    </a>
+  </div>
 </div>
 
 <style>
 .gallery-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   gap: 2rem;
   padding: 2rem 0;
 }
@@ -54,4 +52,4 @@ I have curated some of my favorite artworks and photographs, enjoy! Find more ar
   color: #555;
   margin-top: 0.5rem;
 }
-</style> 
+</style>
