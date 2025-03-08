@@ -6,3 +6,74 @@ layout: home
 title: Home
 banner: "assets/images/banners/banner_1.jpg"
 ---
+
+<div class="carousel-container">
+  <div class="carousel">
+    <img src="assets/images/banners/banner_1.jpg" alt="Banner 1">
+    <img src="assets/images/banners/banner_2.jpg" alt="Banner 2">
+    <img src="assets/images/banners/banner_3.jpg" alt="Banner 3">
+    <img src="assets/images/banners/banner_4.jpg" alt="Banner 4">
+    <img src="assets/images/banners/banner_5.jpg" alt="Banner 5">
+    <img src="assets/images/banners/banner_6.jpg" alt="Banner 6">
+    <img src="assets/images/banners/banner_7.jpg" alt="Banner 7">
+    <img src="assets/images/banners/banner_8.jpg" alt="Banner 8">
+    <img src="assets/images/banners/banner_9.jpg" alt="Banner 9">
+    <img src="assets/images/banners/banner_10.jpg" alt="Banner 10">
+    <img src="assets/images/banners/banner_11.jpg" alt="Banner 11">
+    <img src="assets/images/banners/banner_12.jpg" alt="Banner 12">
+  </div>
+  <button class="scroll-button left" onclick="prevSlide()">&#10094;</button>
+  <button class="scroll-button right" onclick="nextSlide()">&#10095;</button>
+</div>
+
+<style>
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+  }
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .carousel img {
+    width: 100%;
+    flex-shrink: 0;
+  }
+  .scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .left { left: 10px; }
+  .right { right: 10px; }
+</style>
+
+<script>
+  const carousel = document.querySelector('.carousel');
+  const images = document.querySelectorAll('.carousel img');
+  let currentIndex = 0;
+  const totalImages = images.length;
+
+  function updateCarousel() {
+    carousel.style.transform = `translateX(${-currentIndex * 100}%)`;
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+    updateCarousel();
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalImages;
+    updateCarousel();
+  }
+
+  setInterval(nextSlide, 3000); // Auto transition every 3 seconds
+</script>
