@@ -1,9 +1,7 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
 title: Home
+banner: "assets/images/banners/banner_1.jpg"
 banners:
   - "assets/images/banners/banner_1.jpg"
   - "assets/images/banners/banner_2.jpg"
@@ -18,65 +16,32 @@ banners:
   - "assets/images/banners/banner_11.jpg"
   - "assets/images/banners/banner_12.jpg"
 ---
-<div class="banner-container">
-  <div class="banner-carousel">
-    {% for banner in site.banner.carousel %}
-      <img src="{{ banner }}" alt="Banner {{ forloop.index }}">
-    {% endfor %}
-  </div>
-  <button class="scroll-button left" onclick="prevBanner()">&#10094;</button>
-  <button class="scroll-button right" onclick="nextBanner()">&#10095;</button>
-</div>
 
 <script>
-  const bannerCarousel = document.querySelector('.banner-carousel');
-  const banners = document.querySelectorAll('.banner-carousel img');
-  let currentBannerIndex = 0;
-  const totalBanners = banners.length;
+  document.addEventListener("DOMContentLoaded", function() {
+    const banners = {{ page.banners | jsonify }};
+    let currentBannerIndex = 0;
+    const header = document.querySelector("header.site-header");
 
-  function updateBanner() {
-    bannerCarousel.style.transform = `translateX(${-currentBannerIndex * 100}%)`;
-  }
+    function updateBanner() {
+      if (!header) return;
+      header.style.backgroundImage = `url('${banners[currentBannerIndex]}')`;
+      currentBannerIndex = (currentBannerIndex + 1) % banners.length;
+    }
 
-  function prevBanner() {
-    currentBannerIndex = (currentBannerIndex - 1 + totalBanners) % totalBanners;
+    // Initial load
     updateBanner();
-  }
-
-  function nextBanner() {
-    currentBannerIndex = (currentBannerIndex + 1) % totalBanners;
-    updateBanner();
-  }
-
-  setInterval(nextBanner, 3000); // Auto-slide every 3 seconds
+    
+    // Auto-change every 3 seconds
+    setInterval(updateBanner, 3000);
+  });
 </script>
 
 <style>
-  .banner-container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    max-height: 640px;
+  header.site-header {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
   }
-  .banner-carousel {
-    display: flex;
-    transition: transform 0.5s ease;
-    width: calc(100% * {{ site.banner.carousel | size }});
-  }
-  .banner-carousel img {
-    width: 100%;
-    flex-shrink: 0;
-  }
-  .scroll-button {
-    position: absolute;
-    top: 50%;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-  }
-  .left { left: 10px; }
-  .right { right: 10px; }
 </style>
-
