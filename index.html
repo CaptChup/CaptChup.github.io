@@ -1,87 +1,50 @@
 ---
 layout: home
 title: Home
+banner: "assets/images/banners/banner_1.jpg"
+banners:
+  - "assets/images/banners/banner_1.jpg"
+  - "assets/images/banners/banner_2.jpg"
+  - "assets/images/banners/banner_3.jpg"
+  - "assets/images/banners/banner_4.jpg"
+  - "assets/images/banners/banner_5.jpg"
+  - "assets/images/banners/banner_6.jpg"
+  - "assets/images/banners/banner_7.jpg"
+  - "assets/images/banners/banner_8.jpg"
+  - "assets/images/banners/banner_9.jpg"
+  - "assets/images/banners/banner_10.jpg"
+  - "assets/images/banners/banner_11.jpg"
+  - "assets/images/banners/banner_12.jpg"
 ---
-
-<div class="banner-carousel">
-  <div class="carousel-inner">
-    <img src="assets/images/banners/banner_1.jpg" alt="Banner 1">
-    <img src="assets/images/banners/banner_2.jpg" alt="Banner 2">
-    <img src="assets/images/banners/banner_3.jpg" alt="Banner 3">
-    <img src="assets/images/banners/banner_4.jpg" alt="Banner 4">
-    <img src="assets/images/banners/banner_5.jpg" alt="Banner 5">
-    <img src="assets/images/banners/banner_6.jpg" alt="Banner 6">
-    <img src="assets/images/banners/banner_7.jpg" alt="Banner 7">
-    <img src="assets/images/banners/banner_8.jpg" alt="Banner 8">
-    <img src="assets/images/banners/banner_9.jpg" alt="Banner 9">
-    <img src="assets/images/banners/banner_10.jpg" alt="Banner 10">
-    <img src="assets/images/banners/banner_11.jpg" alt="Banner 11">
-    <img src="assets/images/banners/banner_12.jpg" alt="Banner 12">
-  </div>
-  <button class="carousel-btn left" onclick="prevBanner()">&#10094;</button>
-  <button class="carousel-btn right" onclick="nextBanner()">&#10095;</button>
-</div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    const carouselInner = document.querySelector(".carousel-inner");
-    const banners = document.querySelectorAll(".carousel-inner img");
-    let currentIndex = 0;
-    const totalBanners = banners.length;
+    const banners = {{ page.banners | jsonify }};
+    let currentBannerIndex = 0;
+    const bannerElement = document.querySelector('header.site-header');
 
-    function showBanner(index) {
-      const translateX = -index * 100;
-      carouselInner.style.transform = `translateX(${translateX}%)`;
+    function updateBanner() {
+      const nextBanner = banners[currentBannerIndex];
+      if (bannerElement) {
+        bannerElement.style.backgroundImage = `url('${nextBanner}')`;
+      }
+      currentBannerIndex = (currentBannerIndex + 1) % banners.length;
     }
 
-    function nextBanner() {
-      currentIndex = (currentIndex + 1) % totalBanners;
-      showBanner(currentIndex);
-    }
-
-    function prevBanner() {
-      currentIndex = (currentIndex - 1 + totalBanners) % totalBanners;
-      showBanner(currentIndex);
-    }
+    // Initial load
+    updateBanner();
 
     // Auto-slide every 3 seconds
-    setInterval(nextBanner, 3000);
+    setInterval(updateBanner, 3000);
   });
 </script>
 
 <style>
-  .banner-carousel {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    max-height: 640px;
-  }
-
-  .carousel-inner {
-    display: flex;
-    transition: transform 1s ease-in-out;
-    width: 1200%; /* 12 images */
-  }
-
-  .carousel-inner img {
-    width: 100%;
-    flex-shrink: 0;
-    object-fit: cover;
+  header.site-header {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
     height: 640px;
   }
-
-  .carousel-btn {
-    position: absolute;
-    top: 50%;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 24px;
-    transform: translateY(-50%);
-  }
-
-  .left { left: 10px; }
-  .right { right: 10px; }
 </style>
