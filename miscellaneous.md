@@ -1,6 +1,6 @@
 ---
 title: Misc
-layout: post
+layout: default
 ---
 
 # Quotes
