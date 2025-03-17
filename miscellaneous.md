@@ -8,13 +8,13 @@ layout: default
 I have curated some of my favorite quotes from movies, athletes, martial artists, etc. Enjoy.
 
 {% assign images = "tom_platz.jpg,bruce_lee.jpg,ping.jpg,goggins.jpg" | split: "," %}
-{% assign quotes = "The squat is the king of all exercises.,Be water, my friend.,One point at a time.,Stay hard!" | split: "," %}
-{% assign authors = "Tom Platz,Bruce Lee,Ma Long,David Goggins" | split: "," %}
+{% assign quotes = "I would rather die, than acknowledge to myself that I am a loser., Like everyone else, you want to learn the way to win, but never to accept the way to lose, to accept defeat, to learn to die is to be liberated from it. So when tomorrow comes, you must free your ambitious mind, and learn the art of dying., The secret ingredient in my secret ingredient soup is... NOTHING!, Whenever you think you can't, confidence comes from the thing that you built. You must build belief. You must build confidence. It is built on what you put into yourself." | split: "," %}
+{% assign authors = "Tom Platz, Bruce Lee, Mr. Ping, David Goggins" | split: "," %}
 
 {% for i in (0..images.size) %}
   {% if images[i] and quotes[i] and authors[i] %}
   <div class="image-quote">
-    <img src="{{ site.baseurl }}/assets/images/{{ images[i] }}" alt="{{ authors[i] }}">
+    <img src="{{ site.baseurl }}/assets/images/quotes/{{ images[i] }}" alt="{{ authors[i] }}">
     <p class="quote">“{{ quotes[i] }}”</p>
     <p class="author">— {{ authors[i] }}</p>
   </div>
