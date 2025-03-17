@@ -28,7 +28,7 @@ I have curated some of my favorite quotes from movies, athletes, martial artists
 }
 
 .image-quote img {
-  width: 90%;
+  width: 100%;
   max-width: 600px;
   height: auto;
   border-radius: 10px;
