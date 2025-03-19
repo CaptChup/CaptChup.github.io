@@ -29,7 +29,7 @@ I have curated some of my favorite quotes from movies, athletes, martial artists
 
 .image-quote img {
   width: 100%;
-  max-width: 900px;
+  max-width: 1000px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
