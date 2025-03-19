@@ -24,12 +24,12 @@ I have curated some of my favorite quotes from movies, athletes, martial artists
 <style>
 .image-quote {
   text-align: center;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 .image-quote img {
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
