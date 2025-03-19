@@ -29,7 +29,7 @@ I have curated some of my favorite quotes from movies, athletes, martial artists
 
 .image-quote img {
   width: 100%;
-  max-width: 1000px;
+  max-width: 900px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -37,7 +37,7 @@ I have curated some of my favorite quotes from movies, athletes, martial artists
 
 .quote {
   font-style: italic;
-  font-size: 1.1em;
+  font-size: 1.2em;
   margin-top: 10px;
   color: #555;
 }
