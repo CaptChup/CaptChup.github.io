@@ -24,7 +24,7 @@ I have curated some of my favorite quotes from movies, athletes, martial artists
 <style>
 .image-quote {
   text-align: center;
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 .image-quote img {
@@ -37,7 +37,7 @@ I have curated some of my favorite quotes from movies, athletes, martial artists
 
 .quote {
   font-style: italic;
-  font-size: 1em;
+  font-size: 1.1em;
   margin-top: 10px;
   color: #555;
 }
