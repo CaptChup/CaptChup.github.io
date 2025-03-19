@@ -37,7 +37,7 @@ I have curated some of my favorite quotes from movies, athletes, martial artists
 
 .quote {
   font-style: italic;
-  font-size: 1.4em;
+  font-size: 1em;
   margin-top: 10px;
   color: #555;
 }
