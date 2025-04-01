@@ -19,9 +19,11 @@ permalink: /portfolio/
 ## Awards and Achievements
 ### GATE Ecology and Evolution (EY)
 * [2024 - All India Rank 10](/assets/academic/ey24s36406016_scorecard.pdf)
+* [2025 - All India Rank 52](/assets/academic/EY25S66407037_ScoreCard.pdf)
 
 ### GATE Life Sciences (XL)
 * [2024 - All India Rank 970](/assets/academic/xl24s66406006_scorecard.pdf)
+* [2025 - All India Rank 775](/assets/academic/XL25S86407049_ScoreCard.pdf)
 
 ### Fellowships and Scholarships
 * INSPIRE Fellow
