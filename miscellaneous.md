@@ -15,7 +15,7 @@ I have curated some of my favorite quotes from movies, athletes, martial artists
   {% if images[i] and quotes[i] and authors[i] %}
   <div class="image-quote">
     <img src="{{ site.baseurl }}/assets/images/quotes/{{ images[i] }}" alt="{{ authors[i] }}">
-    <p class="quote">“{{ quotes[i] }}”</p>
+    <p class="quote">“{% raw %}{{ quotes[i] }}{% endraw %}”</p>
     <p class="author">— {{ authors[i] }}</p>
   </div>
   {% endif %}
