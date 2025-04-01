@@ -45,7 +45,7 @@ I have curated some of my favorite quotes from movies, athletes, martial artists
 
 <div class="image-quote">
   <img src="{{ site.baseurl }}/assets/images/quotes/boxer.jpg" alt="Boxer">
-  <p class="quote">“I <b><i>will</i></b> work harder. (Artwork by <a href='https://www.ralphsteadman.com/about-us/'>Ralph Steadman</a>)”</p>
+  <p class="quote">“I <b><i>will</i></b> work harder.”<br>(Artwork by <a href='https://www.ralphsteadman.com/about-us/'>Ralph Steadman</a>)</p>
   <p class="author">— Boxer</p>
 </div>
 
