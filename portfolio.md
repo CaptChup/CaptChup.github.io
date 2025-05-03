@@ -25,7 +25,10 @@ permalink: /portfolio/
 * [2024 - All India Rank 970](/assets/academic/xl24s66406006_scorecard.pdf)
 * [2025 - All India Rank 775](/assets/academic/XL25S86407049_ScoreCard.pdf)
 
+### CSIR-UGC NET Life Sciences
+* 2025 - All India Rank 87
+
 ### Fellowships and Scholarships
-* INSPIRE Fellow
+* INSPIRE Fellow (2021 - 2026)
 * [Khorana Scholar 2025](https://iusstf.org/khorana-program-for-scholars)
 
