@@ -26,7 +26,7 @@ permalink: /portfolio/
 * [2025 - All India Rank 775](/assets/academic/XL25S86407049_ScoreCard.pdf)
 
 ### CSIR-UGC NET Life Sciences
-* 2025 - All India Rank 87
+* [2025 - All India Rank 87](/assets/academic/csir_dec_2024_score_card.pdf)
 
 ### Fellowships and Scholarships
 * INSPIRE Fellow (2021 - 2026)
