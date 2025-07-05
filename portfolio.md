@@ -8,6 +8,9 @@ permalink: /portfolio/
 
 ## [CV](/assets/academic/curriculum_vitae.pdf)
 
+## Publications
+* Srinivas, C.L., Sreerag, M., Mukherjee, R. et al. Image-based South Asian bee species identification: a machine learning approach. J Insect Conserv 29, 55 (2025). [https://doi.org/10.1007/s10841-025-00691-7](https://doi.org/10.1007/s10841-025-00691-7)
+
 ## Current Projects
 * My MSc thesis
   - Check out a relevant poster [here!](/assets/academic/icts_dge_2025_poster.pdf)
