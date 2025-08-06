@@ -16,6 +16,7 @@ permalink: /portfolio/
   - Check out a relevant poster [here!](/assets/academic/icts_dge_2025_poster.pdf)
 
 ## Past Internships
+* [Summer Internship 2025](/assets/academic/summer_internship_report_c_l_srinivas_2025.pdf)
 * [Summer Internship 2024](/assets/academic/summer_internship_report_c_l_srinivas_2024_signed_with_ack.pdf)
 * [Summer Internship 2023](/assets/academic/summer_internship_report.pdf)
 
