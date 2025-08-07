@@ -44,6 +44,12 @@ I have curated some of my favorite quotes from movies, athletes, martial artists
 </div>
 
 <div class="image-quote">
+  <img src="{{ site.baseurl }}/assets/images/quotes/jackie.jpg" alt="Training">
+  <p class="quote">“The more you sweat in training, the less you will bleed in battle.”</p>
+  <p class="author">— proverb</p>
+</div>
+
+<div class="image-quote">
   <img src="{{ site.baseurl }}/assets/images/quotes/goggins.jpg" alt="David Goggins">
   <p class="quote">“Whenever you think you can't, confidence comes from the thing that you built. You must build belief. You must build confidence. It is built on what you put into yourself.”</p>
   <p class="author">— David Goggins</p>
