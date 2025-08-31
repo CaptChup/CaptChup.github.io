@@ -13,7 +13,7 @@ permalink: /portfolio/
 
 ## Current Projects
 * My MSc thesis
-  - Check out a relevant poster [here!](/assets/academic/icts_dge_2025_poster.pdf)
+  - Check out a relevant poster [here!](/assets/academic/behaviour_2025_poster_srini.pdf)
 
 ## Past Internships
 * [Summer Internship 2025](/assets/academic/summer_internship_report_c_l_srinivas_2025.pdf)
