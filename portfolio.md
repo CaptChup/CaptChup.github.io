@@ -10,6 +10,7 @@ permalink: /portfolio/
 
 ## Publications
 * Srinivas, C.L., Sreerag, M., Mukherjee, R. et al. Image-based South Asian bee species identification: a machine learning approach. J Insect Conserv 29, 55 (2025). [https://doi.org/10.1007/s10841-025-00691-7](https://doi.org/10.1007/s10841-025-00691-7)
+* Comparison between android applications and Class-I sound level meters in SPL measurement performance Shwetha  Sasindran, Nambukalithoppil  Devanand, Chelakkara Lakshmanan  Srinivas, Rittik  Deb Acta Acust. 10 16 (2026) [DOI: 10.1051/aacus/2026001](https://doi.org/10.1051/aacus/2026001)
 
 ## Current Projects
 * My MSc thesis
