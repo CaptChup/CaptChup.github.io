@@ -3,6 +3,8 @@ layout: default
 title: Art
 permalink: /gallery/art/
 images:
+  - path: /assets/images/gallery/art/boris.webp
+    caption: There are other scientist, like me. Any one of them could've done what I did. But you, everything we asked for, everything we needed; men, material, lunar rovers! Who else could have done these things? They heard me, but listened to you. Of all the ministers and the deputies, the entire congregation of obedient fools, the mistakenly sent the one good man. For god's sakes Boris, you were the one who mattered most.
   - path: /assets/images/gallery/art/a_knight_of_seven_kingdoms.jpg
     caption: Ser Duncan The Tall
   - path: /assets/images/gallery/art/a_knight_of_seven_kingdoms_2.jpg
